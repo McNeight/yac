@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\version.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>net462;net47;net471;net472;net48;net481;net8.0-windows</TargetFrameworks>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>yac.sim</RootNamespace>
+    <AssemblyTitle>yac.sim</AssemblyTitle>
+    <Product>yac.sim</Product>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <Copyright>Copyright © 2014 Rasmus Svensson; Copyright © 2017, 2022 Daniel Quadros; Copyright © 2025 Neil McNeight</Copyright>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <BaseOutputPath>..\..\bin\</BaseOutputPath>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+  </PropertyGroup>
+    
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.14.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.8" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+    
+</Project>

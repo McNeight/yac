@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "COSMAC1802.Assembler": {
+      "commandName": "Project",
+      "commandLineArgs": "EventFlag.1802",
+      "workingDirectory": "C:\\Users\\nm4235\\Documents\\repos\\Bold Experiments\\_E\\RCA1802\\COSMAC1802\\asm"
+    }
+  }
+}
